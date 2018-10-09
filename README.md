@@ -1,4 +1,4 @@
-# reactreduxboilerplate
+# React Redux 2018 boilerplate code with Bootstrap 4, Webpack 4 and SASS integration
 
 Clone repo. 
 Run npm install. 
