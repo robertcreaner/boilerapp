@@ -1,0 +1,17 @@
+// $theme-colors: (
+//   "primary": red
+// );
+
+.close-reminder {
+  position: absolute;
+  right: 1rem;
+  top: 1.2rem;
+}
+
+// Include bootstrap scss
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Test postcss autoprefixer
+::placeholder {
+  color: red;
+}
