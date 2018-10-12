@@ -1,17 +1,56 @@
-// $theme-colors: (
-//   "primary": red
-// );
+@import "./variables.scss";
+@import "./functions.scss";
+@import "./mixins.scss";
 
-.close-reminder {
-  position: absolute;
-  right: 1rem;
-  top: 1.2rem;
+// Overwrite bootstrap theme
+$theme-colors: ($colors);
+
+nav {
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      padding: 0 20px;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .dropdown-menu .dropdown-item a {
+        color: #212529;
+      }
+
+      .currentPage {
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+}
+
+body {
+  .close-reminder {
+    position: absolute;
+    right: 1rem;
+    top: 1.2rem;
+  }
+
+  .logo {
+    color: color(dark) !important;
+
+    @include screen(medium) {
+      color: white !important;
+    }
+  }
+
+  input {
+    // Test autoprefixer
+    ::placeholder {
+      color: color(primary);
+    }
+  }
 }
 
 // Include bootstrap scss
 @import "node_modules/bootstrap/scss/bootstrap";
-
-// Test postcss autoprefixer
-::placeholder {
-  color: red;
-}

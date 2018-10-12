@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 
-import ReminderContainer from "../../components/containers/reminder/ReminderContainer";
+import ReminderContainer from "../../components/containers/ReminderContainer";
 import {
   addReminder,
   updateReminder,

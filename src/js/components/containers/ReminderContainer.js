@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import Input from "../../presentational/shared/Input";
-import Button from "../../presentational/shared/Button";
-import Card from "../../presentational/reminder/Card";
+import Input from "../presentational/Input";
+import Button from "../presentational/Button";
+import Card from "../presentational/Card";
 
 class ReminderContainer extends Component {
   constructor() {
@@ -47,7 +47,7 @@ class ReminderContainer extends Component {
     const { reminder } = this.props;
     return (
       <div className="text-center">
-        <div className="jumbotron mb-2">
+        <div className="jumbotron mb-2 bg-light">
           <h1 className="display-4">React. Redux. Bootstrap. Sass.</h1>
           <p className="lead">
             This app contains all the boilerplate code you need to get started
